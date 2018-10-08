@@ -1,0 +1,30 @@
+
+img
+{    
+    min-height:100%;
+    min-width:100%;
+    position:absolute;
+    top:-100%; bottom:-100%;
+    margin:auto;
+    object-fit: cover;
+}
+#signup
+{
+    background-color: rgb(14, 194, 14);
+    color: white;
+    text-align: center;
+    border-radius: 15px;
+}
+form
+{
+    position:absolute;
+	left:470px;
+    top:40px;background-color:rgb(152, 224, 182);border:2px transparent inset; 
+    width:400px; height:510px; padding-left: 7px;padding-right: 7px;
+    border-radius: 10px;
+}
+h1
+{
+    text-align: center;
+}
+
