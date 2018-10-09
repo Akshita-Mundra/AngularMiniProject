@@ -18,8 +18,8 @@ img
 form
 {
     position:absolute;
-	left:470px;
-    top:40px;background-color:rgb(152, 224, 182);border:2px transparent inset; 
+	left:500px;
+    top:100px;background-color:rgb(152, 224, 182);border:2px transparent inset; 
     width:400px; height:510px; padding-left: 7px;padding-right: 7px;
     border-radius: 10px;
 }

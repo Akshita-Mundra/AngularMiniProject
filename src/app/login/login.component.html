@@ -9,13 +9,13 @@
         <div class="input-group">
           <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
           <input id="email" type="mail" class="form-control"  required
-                  [(ngModel)]="email" name="email" placeholder="Email">
+                  [(ngModel)]="mail" name="email" placeholder="Email">
         </div>
         <br>
         <div class="input-group">
           <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
           <input id="password" type="password" 
-                class="form-control" [(ngModel)]="password" required
+                class="form-control" [(ngModel)]="pwd" required
                 name="password" placeholder="Password">
         </div>
         
@@ -24,7 +24,10 @@
             <a href="#" routerLink="/signup" style="float:right;">Sign Up</a>
         
         </div>
-        <label id="login" class="form-control" (click)="storeValue()" routerLink="/home">LOGIN</label>
+        <label id="login" class="form-control" (click)="checkValue()" *ngIf="!check; else novalue"> LOGIN</label>
+        <ng-template #novalue>
+            <span routerLink=""></span>
+        </ng-template>
         
         <br>
       </div> 

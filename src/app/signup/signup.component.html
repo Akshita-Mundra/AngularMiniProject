@@ -11,7 +11,7 @@
                 name="email" placeholder="Username">
         <br>
         <p class="w3-large"><i class="glyphicon glyphicon-lock"></i><b>   Password :</b></p>
-        <input id="password" type="password" class="form-control" 
+        <input id="password" type="password" class="form-control" [(ngModel)]="password"
                name="password" placeholder="Password">
         <br>        
         <p class="w3-large"><i class="glyphicon glyphicon-envelope"></i><b>  Email :</b></p>
@@ -19,13 +19,15 @@
                name="email" placeholder="Email">
         <br>
         <p class="w3-large"><i class="glyphicon glyphicon-phone-alt"></i><b>  Contact No. :</b></p>
-        <input id="contact" type="text" class="form-control" name="contct" placeholder="Phone Number">
+        <input id="contact" type="text" class="form-control" name="contct"
+               [(ngModel)]="contact" placeholder="Phone Number">
         
         <div class="checkbox">
-            <label ><input type="checkbox">Remember me</label>
+            <label ><input type="checkbox"  (click)="storeValue()" [(ngModel)]="checkbox" name="checkbox">Remember me</label>
+            <a href="#" routerLink="" style="float:right;">Login</a>
         </div>
         
-         <label id="signup" class="form-control" routerLink="">SIGN UP</label>
+         <label id="signup" class="form-control"  routerLink="">SIGN UP</label>
         
         <br>
       </div> 

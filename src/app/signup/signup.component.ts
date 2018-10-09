@@ -6,10 +6,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./signup.component.css']
 })
 export class SignupComponent implements OnInit {
-
+  user="";password="";email="";contact="";
+  checkbox=false;
   constructor() { }
 
   ngOnInit() {
   }
-
+  storeValue()
+  {
+    this.checkbox=!this.checkbox;
+    console.log(this.user,this.password,this.email,this.contact,this.checkbox);
+  }
 }
